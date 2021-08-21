@@ -12,11 +12,6 @@ async def say(ctx, word):#-----------------------------------the name of the fun
 @bot.command(name="your command name")#-----------------------if you want a different name for the command use the parameter name
 async def example_function(ctx):#----------------------------and call the function with the name you want
   return
-  
-@bot.event
-async def on_message(message):#------------------------------this function is called when a message is sent in one of the bot servers
-  if message.content == "hi bot":
-    message.channel.send(f"hi {message.author}")
 
 bot.run(TOKEN)#----------------------------------------------run the bot using the token
 
